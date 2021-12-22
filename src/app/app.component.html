@@ -9,6 +9,12 @@
   [columns]="['id', 'first_name', 'last_name', 'email', 'gender', 'ip_address']"
   [showBorders]="true"
 >
+  <dxo-search-panel
+    [visible]="true"
+    [width]="240"
+    placeholder="Search..."
+  ></dxo-search-panel>
+  <dxo-filter-row [visible]="true" applyFilter="auto"></dxo-filter-row>
   <dxo-sorting mode="multiple"></dxo-sorting>
   <dxi-column dataField="id" caption="Id" [width]="70"></dxi-column>
   <dxi-column
