@@ -9,6 +9,18 @@
   [columns]="['id', 'first_name', 'last_name', 'email', 'gender', 'ip_address']"
   [showBorders]="true"
 >
+  <dxi-column dataField="id"></dxi-column>
+  <dxi-column dataField="first_name"></dxi-column>
+  <dxi-column dataField="last_name"></dxi-column>
+  <dxi-column dataField="email"></dxi-column>
+  <dxi-column dataField="ip_address"></dxi-column>
+  <dxi-column dataField="gender" [groupIndex]="0"></dxi-column>
+
+  <dxo-search-panel [visible]="true"></dxo-search-panel>
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-group-panel [visible]="true"></dxo-group-panel>
+  <dxo-grouping #expand [autoExpandAll]="true"></dxo-grouping>
+
   <dxo-scrolling rowRenderingMode="virtual"> </dxo-scrolling>
   <dxo-paging [pageSize]="10"> </dxo-paging>
   <dxo-pager
