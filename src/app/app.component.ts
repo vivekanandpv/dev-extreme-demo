@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { Person, persons } from './data.1';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'dev-extreme-demo';
+  users: Person[] = persons;
 }
