@@ -8,4 +8,6 @@ import { Person, persons } from './data.1';
 })
 export class AppComponent {
   users: Person[] = persons;
+
+  inputValue = '';
 }

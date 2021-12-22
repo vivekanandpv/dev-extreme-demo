@@ -8,4 +8,19 @@
   keyExpr="id"
   [columns]="['id', 'first_name', 'last_name', 'email', 'gender', 'ip_address']"
   [showBorders]="true"
-></dx-data-grid>
+>
+  <dxo-scrolling rowRenderingMode="virtual"> </dxo-scrolling>
+  <dxo-paging [pageSize]="10"> </dxo-paging>
+  <dxo-pager
+    [visible]="true"
+    [allowedPageSizes]="[5, 10, 20, 25, 'all']"
+    displayMode="full"
+    [showPageSizeSelector]="true"
+    [showInfo]="true"
+    [showNavigationButtons]="true"
+  >
+  </dxo-pager>
+</dx-data-grid>
+
+<!-- <h4>{{ inputValue }}</h4>
+<input type="text" [(ngModel)]="inputValue" /> -->
